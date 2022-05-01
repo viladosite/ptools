@@ -35,28 +35,25 @@
 	<main>
 		<div id="container-main">
 			<div id="eval-wheel">
-				<object data="" type="svg">
-					<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio>
-						<g class="layer">
-							<title>Layer 1</title>
-							<g id="svg-wheel">
-								<line class="axis-line" fill="none" id="axis-line1" stroke="#000" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
-								<line class="axis-line" fill="none" id="axis-line2" stroke="#000" transform="rotate(-45 428.09 301.751)" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
-								<line class="axis-line" fill="none" id="axis-line3" stroke="#000" transform="rotate(-90 428.09 301.751)" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
-								<line class="axis-line" fill="none" id="axis-line4" stroke="#000" transform="rotate(-135 428.09 301.751)" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
-								<line class="wheel-line" fill="none" id="wheel-line1" stroke="#183A53" x1="363.13" y1="301.59" x2="428.16" y2="171.6"/>
-								<line class="wheel-line" fill="none" id="wheel-line2" stroke="#183A53" x1="428.16" y1="171.6" x2="428.1" y2="335.5"/>
-								<line class="wheel-line" fill="none" id="wheel-line3" stroke="#183A53" x1="428" y1="335.3" x2="404.5" y2="325.5"/>
-								<line class="wheel-line" fill="none" id="wheel-line4" stroke="#183A53" x1="404.3" y1="325.3" x2="394.6" y2="301.7"/>
-								<line class="wheel-line" fill="none" id="wheel-line5" stroke="#183A53" x1="363.3" y1="301.8" x2="382.3" y2="347.5"/>
-								<line class="wheel-line" fill="none" id="wheel-line6" stroke="#183A53" x1="327.14" y1="301.61" x2="356.43" y2="372.68"/>
-								<line class="wheel-line" fill="none" id="wheel-line7" stroke="#183A53" x1="298.09" y1="301.19" x2="335.8" y2="209.55"/>
-								<line class="wheel-line" fill="none" id="wheel-line8" stroke="#183A53" x1="266.56" y1="301.91" x2="312.74" y2="415.29"/>
-							</g>
+				<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio>
+					<g class="layer">
+						<title>Evaluation Wheel</title>
+						<g id="svg-wheel">
+							<line class="axis-line" fill="none" id="axis-line1" stroke="#000" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
+							<line class="axis-line" fill="none" id="axis-line2" stroke="#000" transform="rotate(-45 428.09 301.751)" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
+							<line class="axis-line" fill="none" id="axis-line3" stroke="#000" transform="rotate(-90 428.09 301.751)" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
+							<line class="axis-line" fill="none" id="axis-line4" stroke="#000" transform="rotate(-135 428.09 301.751)" x1="428.09" x2="428.09" y1="107.87" y2="495.64"/>
+							<line class="wheel-line" fill="none" id="wheel-line1" stroke="#183A53" x1="428.2" y1="268.2" x2="451.4" y2="278"></line>
+							<line class="wheel-line" fill="none" id="wheel-line2" stroke="#183A53" x1="451.4" y1="278" x2="461.4" y2="301.7"></line>
+							<line class="wheel-line" fill="none" id="wheel-line3" stroke="#183A53" x1="461.4" y1="301.7" x2="451.7" y2="325.3"></line>
+							<line class="wheel-line" fill="none" id="wheel-line4" stroke="#183A53" x1="451.7" y1="325.3" x2="428.2" y2="335.5"></line>
+							<line class="wheel-line" fill="none" id="wheel-line5" stroke="#183A53" x1="428.2" y1="335.5" x2="404.5" y2="325.5"></line>
+							<line class="wheel-line" fill="none" id="wheel-line6" stroke="#183A53" x1="404.5" y1="325.5" x2="394.7" y2="301.7"></line>
+							<line class="wheel-line" fill="none" id="wheel-line7" stroke="#183A53" x1="394.7" y1="301.7" x2="404.6" y2="278.2"></line>
+							<line class="wheel-line" fill="none" id="wheel-line8" stroke="#183A53" x1="404.6" y1="278.2" x2="428.2" y2="268.2"></line>
 						</g>
-					</svg>
-				</object>
-
+					</g>
+				</svg>
 			</div>
 		</div>
 		<div id="container-props" class="">
@@ -69,43 +66,35 @@
 						<legend>Axis names</legend>
 						<div>
 							<label for="axis1name">Axis1 name:</label>
-							<input type="text" name="axis1name" id="axis1name" placeholder="Type a name for axis 1">
-							<button onclick="nomearEixo(1, axis1name.value)">ok</button>
+							<input type="text" name="axis1name" id="axis1name" placeholder="Type a name for axis 1" onchange="nomearEixo(1, this.value)">
 						</div>
 						<div>
 							<label for="axis2name">Axis2 name:</label>
-							<input type="text" name="axis2name" id="axis2name" placeholder="Type a name for axis 2">
-							<button onclick="nomearEixo(2, axis2name.value)">ok</button>
+							<input type="text" name="axis2name" id="axis2name" placeholder="Type a name for axis 2" onchange="nomearEixo(2, this.value)">
 						</div>					
 						<div>
 							<label for="axis3name">Axis3 name:</label>
-							<input type="text" name="axis3name" id="axis3name" placeholder="Type a name for axis 3">
-							<button onclick="nomearEixo(3, axis3name.value)">ok</button>
+							<input type="text" name="axis3name" id="axis3name" placeholder="Type a name for axis 3" onchange="nomearEixo(3, this.value)">
 						</div>
 						<div>
 							<label for="axis4name">Axis4 name:</label>
-							<input type="text" name="axis4name" id="axis4name" placeholder="Type a name for axis 4">
-							<button onclick="nomearEixo(4, axis4name.value)">ok</button>
+							<input type="text" name="axis4name" id="axis4name" placeholder="Type a name for axis 4" onchange="nomearEixo(4, this.value)">
 						</div>
 						<div>
 							<label for="axis5name">Axis5 name:</label>
-							<input type="text" name="axis5name" id="axis5name" placeholder="Type a name for axis 5">
-							<button onclick="nomearEixo(5, axis5name.value)">ok</button>
+							<input type="text" name="axis5name" id="axis5name" placeholder="Type a name for axis 5" onchange="nomearEixo(5, this.value)">
 						</div>
 						<div>
 							<label for="axis6name">Axis6 name:</label>
-							<input type="text" name="axis6name" id="axis6name" placeholder="Type a name for axis 6">
-							<button onclick="nomearEixo(6, axis6name.value)">ok</button>
+							<input type="text" name="axis6name" id="axis6name" placeholder="Type a name for axis 6" onchange="nomearEixo(6, this.value)">
 						</div>
 						<div>
 							<label for="axis7name">Axis7 name:</label>
-							<input type="text" name="axis7name" id="axis7name" placeholder="Type a name for axis 7">
-							<button onclick="nomearEixo(7, axis7name.value)">ok</button>
+							<input type="text" name="axis7name" id="axis7name" placeholder="Type a name for axis 7" onchange="nomearEixo(7, this.value)">
 						</div>
 						<div>
 							<label for="axis8name">Axis8 name:</label>
-							<input type="text" name="axis8name" id="axis8name" placeholder="Type a name for axis 8">
-							<button onclick="nomearEixo(8, axis8name.value)">ok</button>
+							<input type="text" name="axis8name" id="axis8name" placeholder="Type a name for axis 8" onchange="nomearEixo(8, this.value)">
 						</div>
 					</fieldset>
 					<fieldset id="axis-values" class="prop-section-content">

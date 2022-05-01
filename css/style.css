@@ -41,9 +41,8 @@ main {
 
 footer {
     display: flex;
-    grid-area: footer;
-    flex-flow: row;
     padding: 5px 10px;
+    gap: 10px;
 }
 button {
     padding: 5px;
