@@ -1,0 +1,237 @@
+:root {
+    --background: #DCDBD8;
+    --primary-light: #5C97B8;
+    --primary-dark: #183A53;
+    --secondary: #D1A58A;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-dark);
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+
+/* Grid Definitions */
+body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    padding: 5px 10px;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    flex-flow: row;
+    padding: 5px 10px;
+}
+button {
+    padding: 5px;
+    text-transform: uppercase;
+}
+select {
+    padding: 5px;
+}
+/* Grid Definitions */
+
+
+
+/* Global Classes */
+.none {
+    display: none;
+}
+
+.menu-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+.menu-icons li i:hover {
+    color: var(--primary-light);
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+
+.tooltiptext {
+    visibility: hidden;
+    font-size: smaller;
+    width: 120px;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.svgicon {
+    height: 25px;
+}
+
+.lockbutton {
+    /* Criar configuração do botão que salva e trava/destrava pra edição */
+}
+
+fieldset {
+    
+}
+/* Global Classes */
+
+
+
+/* Header Classes */
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+    flex: 0 1 auto;
+}
+
+#menu-top {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 2 auto;
+}
+
+#menu-top-items li {
+    transition: transform 0.5s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+#menu-top-items li:hover, #menu-top-items li:focus {
+    transform: scale(1.5);
+}
+/* Header Classes */
+
+
+
+/* Main Content Classes */
+#container-main{
+    flex-grow: 1;
+}
+
+#container-main * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-props {
+    width: 400px;
+    height: 100%;
+    border: solid 1px var(--primary-dark);
+    padding: 10px;
+}
+
+#sidebar-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.prop-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.prop-section-content * {
+    display: flex;
+    gap: 10px;
+}
+/* Main Content Classes */
+
+
+
+
+
+/* Evaluation Wheel */
+
+.axis-line {
+    stroke: black;
+}
+
+.wheel-line {
+    stroke: var(--primary-dark);
+}
+
+/* Evaluation Wheel */
+
+
+
+
+
+/* Footer Classes */
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+}
+
+#footer-news {
+    border: solid var(--primary-dark) 1px;
+    flex: 1 1 auto;
+    cursor: pointer;
+}
+
+#footer-news:hover {
+    background-color: var(--primary-light);
+}
+
+#footer-statusbar {
+    flex: 4 1 auto;
+}
+
+#footer-social {
+    flex: 1 1 auto;
+}
+
+
+/* Footer Classes */
