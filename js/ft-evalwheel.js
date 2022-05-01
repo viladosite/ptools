@@ -159,8 +159,13 @@ function colorizar(color){
 function nomearEixo(eixonum, nome) {
     let labelExists = document.getElementById(`axis${eixonum}.label`);
     let label = document.createElementNS('http://www.w3.org/2000/svg','text');
-    let labelText = document.createTextNode(nome);
     let labelNum = 'label'.concat(eixonum);
+    let axisValue = localStorage.getItem(`axis${eixonum}-value`);
+    let axisRestoredValue
+    if (axisValue) {axisRestoredValue = '- ' + axisValue;};
+    let labelText = document.createTextNode(nome);
+    let labelTitle = document.createElement('title');
+    let labelTitleSet = nome + axisRestoredValue;
 
     if (labelExists) { labelExists.parentNode.removeChild(labelExists); }
     label.setAttributeNS(null,"id",`axis${eixonum}.label`);
@@ -170,7 +175,9 @@ function nomearEixo(eixonum, nome) {
         label.setAttributeNS(null,"text-anchor",'end');
     }
     document.getElementById('svg-wheel').appendChild(label);
+    label.appendChild(labelTitle);
     label.appendChild(labelText);
+    labelTitle.textContent = labelTitleSet;
 
     localStorage.setItem(`axis${eixonum}-name`, nome);
 }
