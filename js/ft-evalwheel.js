@@ -143,17 +143,17 @@ function avaliarEixo(eixonum, nota){
     localStorage.setItem(`axis${eixonum}-value`, nota);
 }
 
-function colorizar(color){
-    document.getElementById('wheel-line1').setAttribute('stroke', color)
-    document.getElementById('wheel-line2').setAttribute('stroke', color)
-    document.getElementById('wheel-line3').setAttribute('stroke', color)
-    document.getElementById('wheel-line4').setAttribute('stroke', color)
-    document.getElementById('wheel-line5').setAttribute('stroke', color)
-    document.getElementById('wheel-line6').setAttribute('stroke', color)
-    document.getElementById('wheel-line7').setAttribute('stroke', color)
-    document.getElementById('wheel-line8').setAttribute('stroke', color)
+function colorizarLinhas(color){
+    document.getElementById("wheel-line1").style.stroke = color;
+    document.getElementById('wheel-line2').style.stroke = color;
+    document.getElementById('wheel-line3').style.stroke = color;
+    document.getElementById('wheel-line4').style.stroke = color;
+    document.getElementById('wheel-line5').style.stroke = color;
+    document.getElementById('wheel-line6').style.stroke = color;
+    document.getElementById('wheel-line7').style.stroke = color;
+    document.getElementById('wheel-line8').style.stroke = color;
 
-    return console.log('Gráfico colorizado de acordo com a cor informada')
+    return console.log('Graphic recolorized')
 }
 
 function nomearEixo(eixonum, nome) {
